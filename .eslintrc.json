@@ -1,6 +1,19 @@
 {
-  "extends": "standard-with-typescript",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+    }
 }
